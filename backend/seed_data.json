@@ -1,0 +1,916 @@
+[
+  {
+    "model": "api.user",
+    "pk": 1,
+    "fields": {
+      "role": "patient",
+      "username": "demo",
+      "email": "demo@example.com",
+      "password": "pbkdf2_sha256$1200000$OuSrGH1FQYx9ZTVOMmyxCA$W2wrXMJ9DWFn0r3/DvlY0oZEJClgb70qJC5MHGOmsmc=",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2,
+    "fields": {
+      "role": "doctor",
+      "username": "user2",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 3,
+    "fields": {
+      "role": "doctor",
+      "username": "user3",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 4,
+    "fields": {
+      "role": "doctor",
+      "username": "user4",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 5,
+    "fields": {
+      "role": "doctor",
+      "username": "user5",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 6,
+    "fields": {
+      "role": "doctor",
+      "username": "user6",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 7,
+    "fields": {
+      "role": "doctor",
+      "username": "user7",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 8,
+    "fields": {
+      "role": "patient",
+      "username": "user8",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 9,
+    "fields": {
+      "role": "patient",
+      "username": "user9",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 10,
+    "fields": {
+      "role": "patient",
+      "username": "user10",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 11,
+    "fields": {
+      "role": "patient",
+      "username": "user11",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 12,
+    "fields": {
+      "role": "patient",
+      "username": "user12",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 13,
+    "fields": {
+      "role": "receptionist",
+      "username": "user13",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 14,
+    "fields": {
+      "role": "receptionist",
+      "username": "user14",
+      "password": "pbkdf2_sha256$600000$salt$hash",
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "specialty": "Family Medicine",
+      "bio": "Dr. Sarah Chen has practiced family medicine at Riverbend for over 12 years.",
+      "photo": "/img/doctor_profiles/doctorprofile-1.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "specialty": "Internal Medicine",
+      "bio": "Dr. Michael Obiri focuses on chronic disease management and preventive care.",
+      "photo": "/img/doctor_profiles/doctorprofile-2.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "specialty": "Obstetrics and Gynecology",
+      "bio": "Dr. Elena Vasquez specializes in prenatal care and women's health.",
+      "photo": "/img/doctor_profiles/doctorprofile-3.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 4,
+    "fields": {
+      "user": 5,
+      "specialty": "Pediatrics",
+      "bio": "Dr. Raj Patel has cared for children in the Riverbend community since 2015.",
+      "photo": "/img/doctor_profiles/doctorprofile-4.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 5,
+    "fields": {
+      "user": 6,
+      "specialty": "Orthopedics",
+      "bio": "Dr. Nina Brooks treats sports injuries and musculoskeletal conditions.",
+      "photo": "/img/doctor_profiles/doctorprofile-5.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.doctorprofile",
+    "pk": 6,
+    "fields": {
+      "user": 7,
+      "specialty": "Sports Medicine",
+      "bio": "Dr. James Whitaker works with student athletes on injury prevention.",
+      "photo": "/img/doctor_profiles/doctorprofile-6.jpg",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "date_of_birth": "1990-04-12",
+      "phone": "555-201-3344",
+      "address": "142 Willow Creek Rd, Riverbend, OH",
+      "insurance_provider": "Blue Cross Blue Shield",
+      "insurance_policy_number": "BCBS-884521",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 2,
+    "fields": {
+      "user": 8,
+      "date_of_birth": "1985-09-02",
+      "phone": "555-402-1187",
+      "address": "88 Elm Street, Riverbend, OH",
+      "insurance_provider": "Aetna",
+      "insurance_policy_number": "AET-220934",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 3,
+    "fields": {
+      "user": 9,
+      "date_of_birth": "1978-11-23",
+      "phone": "555-337-9021",
+      "address": "501 Oakridge Ave, Riverbend, OH",
+      "insurance_provider": "UnitedHealthcare",
+      "insurance_policy_number": "UHC-559812",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 4,
+    "fields": {
+      "user": 10,
+      "date_of_birth": "1996-02-14",
+      "phone": "555-884-2290",
+      "address": "77 Maple Lane, Riverbend, OH",
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "CIG-110245",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 5,
+    "fields": {
+      "user": 11,
+      "date_of_birth": "1982-06-30",
+      "phone": "555-663-7742",
+      "address": "210 Birchwood Dr, Riverbend, OH",
+      "insurance_provider": "Humana",
+      "insurance_policy_number": "HUM-776531",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.patientprofile",
+    "pk": 6,
+    "fields": {
+      "user": 12,
+      "date_of_birth": "2006-01-19",
+      "phone": "555-920-4456",
+      "address": "33 Sycamore Ct, Riverbend, OH",
+      "insurance_provider": "Blue Cross Blue Shield",
+      "insurance_policy_number": "BCBS-114420",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 1,
+    "fields": {
+      "name": "Annual Physical Exam",
+      "description": "Comprehensive yearly checkup including bloodwork and vitals review.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 2,
+    "fields": {
+      "name": "Pediatric Wellness Checkup",
+      "description": "Routine wellness visit for infants, children, and adolescents.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 3,
+    "fields": {
+      "name": "Flu Vaccination",
+      "description": "Seasonal influenza vaccine administered by clinic nursing staff.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 4,
+    "fields": {
+      "name": "Diabetes Management Consultation",
+      "description": "Ongoing care plan for patients managing type 1 or type 2 diabetes.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 5,
+    "fields": {
+      "name": "Prenatal Care Visit",
+      "description": "Routine prenatal checkup including ultrasound scheduling if needed.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 6,
+    "fields": {
+      "name": "Sports Physical",
+      "description": "Pre-participation physical exam required for school athletics.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 7,
+    "fields": {
+      "name": "Minor Injury Treatment",
+      "description": "Evaluation and treatment of sprains, cuts, and minor fractures.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.service",
+    "pk": 8,
+    "fields": {
+      "name": "Chronic Pain Management Consultation",
+      "description": "Assessment and ongoing treatment planning for chronic pain conditions.",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 1,
+    "fields": {
+      "day_of_week": "monday",
+      "open_time": "08:00:00",
+      "close_time": "18:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 2,
+    "fields": {
+      "day_of_week": "tuesday",
+      "open_time": "08:00:00",
+      "close_time": "18:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 3,
+    "fields": {
+      "day_of_week": "wednesday",
+      "open_time": "08:00:00",
+      "close_time": "18:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 4,
+    "fields": {
+      "day_of_week": "thursday",
+      "open_time": "08:00:00",
+      "close_time": "18:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 5,
+    "fields": {
+      "day_of_week": "friday",
+      "open_time": "08:00:00",
+      "close_time": "17:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 6,
+    "fields": {
+      "day_of_week": "saturday",
+      "open_time": "09:00:00",
+      "close_time": "13:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.clinichour",
+    "pk": 7,
+    "fields": {
+      "day_of_week": "sunday",
+      "open_time": "10:00:00",
+      "close_time": "14:00:00",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 1,
+    "fields": {
+      "patient": 1,
+      "doctor": 2,
+      "scheduled_at": "2024-06-10T09:00:00Z",
+      "status": "completed",
+      "reason": "Annual physical exam and bloodwork review",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 2,
+    "fields": {
+      "patient": 1,
+      "doctor": 3,
+      "scheduled_at": "2024-07-15T14:30:00Z",
+      "status": "completed",
+      "reason": "Follow-up for seasonal allergy symptoms",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 3,
+    "fields": {
+      "patient": 8,
+      "doctor": 1,
+      "scheduled_at": "2024-06-12T10:00:00Z",
+      "status": "completed",
+      "reason": "Persistent cough and chest congestion",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 4,
+    "fields": {
+      "patient": 9,
+      "doctor": 4,
+      "scheduled_at": "2024-06-20T11:15:00Z",
+      "status": "completed",
+      "reason": "Diabetes management quarterly check-in",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 5,
+    "fields": {
+      "patient": 10,
+      "doctor": 5,
+      "scheduled_at": "2024-07-01T08:30:00Z",
+      "status": "requested",
+      "reason": "New patient wellness consultation",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 6,
+    "fields": {
+      "patient": 11,
+      "doctor": 6,
+      "scheduled_at": "2024-07-05T13:00:00Z",
+      "status": "completed",
+      "reason": "Lower back pain evaluation",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 7,
+    "fields": {
+      "patient": 12,
+      "doctor": 7,
+      "scheduled_at": "2024-06-18T15:45:00Z",
+      "status": "completed",
+      "reason": "Sports physical for high school soccer",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 8,
+    "fields": {
+      "patient": 1,
+      "doctor": 4,
+      "scheduled_at": "2024-07-22T09:30:00Z",
+      "status": "checked_in",
+      "reason": "Prenatal visit - 20 week checkup",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 1,
+    "fields": {
+      "appointment": 1,
+      "doctor": 2,
+      "patient": 1,
+      "content": "Vitals normal. Bloodwork ordered for lipid panel and A1C. Advised increased hydration.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 2,
+    "fields": {
+      "appointment": 2,
+      "doctor": 3,
+      "patient": 1,
+      "content": "Allergy symptoms consistent with seasonal rhinitis. Prescribed antihistamine, recheck in 4 weeks.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 3,
+    "fields": {
+      "appointment": 3,
+      "doctor": 1,
+      "patient": 8,
+      "content": "Lungs clear on auscultation. Likely viral bronchitis. Recommended rest and fluids.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 4,
+    "fields": {
+      "appointment": 4,
+      "doctor": 4,
+      "patient": 9,
+      "content": "A1C improved to 6.8. Continuing current metformin dosage, reviewed diet plan.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 5,
+    "fields": {
+      "appointment": 6,
+      "doctor": 6,
+      "patient": 11,
+      "content": "No radiculopathy noted. Recommended physical therapy and anti-inflammatories.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.visitnote",
+    "pk": 6,
+    "fields": {
+      "appointment": 7,
+      "doctor": 7,
+      "patient": 12,
+      "content": "Cleared for soccer participation. No cardiac or musculoskeletal concerns found.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 1,
+    "fields": {
+      "appointment": 1,
+      "doctor": 2,
+      "patient": 1,
+      "medication": "Atorvastatin",
+      "dosage": "10mg once daily",
+      "instructions": "Take at bedtime with food.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 2,
+    "fields": {
+      "appointment": 2,
+      "doctor": 3,
+      "patient": 1,
+      "medication": "Loratadine",
+      "dosage": "10mg once daily",
+      "instructions": "Take in the morning as needed for allergy symptoms.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 3,
+    "fields": {
+      "appointment": 3,
+      "doctor": 1,
+      "patient": 8,
+      "medication": "Benzonatate",
+      "dosage": "100mg three times daily",
+      "instructions": "Do not chew capsule, swallow whole.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 4,
+    "fields": {
+      "appointment": 4,
+      "doctor": 4,
+      "patient": 9,
+      "medication": "Metformin",
+      "dosage": "500mg twice daily",
+      "instructions": "Take with breakfast and dinner.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 5,
+    "fields": {
+      "appointment": 6,
+      "doctor": 6,
+      "patient": 11,
+      "medication": "Naproxen",
+      "dosage": "250mg twice daily",
+      "instructions": "Take with food to avoid stomach upset.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 6,
+    "fields": {
+      "appointment": 7,
+      "doctor": 7,
+      "patient": 12,
+      "medication": "Ibuprofen",
+      "dosage": "200mg as needed",
+      "instructions": "Use for muscle soreness, max 3 times daily.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 1,
+    "fields": {
+      "patient": 1,
+      "appointment": 1,
+      "amount": "145.00",
+      "status": "paid",
+      "due_date": "2024-06-25",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 2,
+    "fields": {
+      "patient": 1,
+      "appointment": 2,
+      "amount": "95.00",
+      "status": "pending",
+      "due_date": "2024-07-30",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 3,
+    "fields": {
+      "patient": 1,
+      "appointment": 8,
+      "amount": "180.00",
+      "status": "pending",
+      "due_date": "2024-08-05",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 4,
+    "fields": {
+      "patient": 8,
+      "appointment": 3,
+      "amount": "120.00",
+      "status": "paid",
+      "due_date": "2024-06-27",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 5,
+    "fields": {
+      "patient": 9,
+      "appointment": 4,
+      "amount": "160.00",
+      "status": "overdue",
+      "due_date": "2024-06-30",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 6,
+    "fields": {
+      "patient": 10,
+      "appointment": 5,
+      "amount": "110.00",
+      "status": "pending",
+      "due_date": "2024-07-15",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 7,
+    "fields": {
+      "patient": 11,
+      "appointment": 6,
+      "amount": "135.00",
+      "status": "paid",
+      "due_date": "2024-07-20",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bill",
+    "pk": 8,
+    "fields": {
+      "patient": 12,
+      "appointment": 7,
+      "amount": "90.00",
+      "status": "paid",
+      "due_date": "2024-06-28",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 1,
+    "fields": {
+      "patient": 1,
+      "uploaded_by": 1,
+      "doc_type": "insurance_card",
+      "file": "https://picsum.photos/seed/demo-insurance-1/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 2,
+    "fields": {
+      "patient": 1,
+      "uploaded_by": 2,
+      "doc_type": "lab_result",
+      "file": "https://picsum.photos/seed/demo-labs-2/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 3,
+    "fields": {
+      "patient": 8,
+      "uploaded_by": 8,
+      "doc_type": "insurance_card",
+      "file": "https://picsum.photos/seed/simmons-card-3/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 4,
+    "fields": {
+      "patient": 9,
+      "uploaded_by": 4,
+      "doc_type": "lab_result",
+      "file": "https://picsum.photos/seed/reyes-labs-4/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 5,
+    "fields": {
+      "patient": 10,
+      "uploaded_by": 10,
+      "doc_type": "other",
+      "file": "https://picsum.photos/seed/nair-doc-5/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 6,
+    "fields": {
+      "patient": 11,
+      "uploaded_by": 6,
+      "doc_type": "lab_result",
+      "file": "https://picsum.photos/seed/mendez-labs-6/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 7,
+    "fields": {
+      "patient": 12,
+      "uploaded_by": 13,
+      "doc_type": "insurance_card",
+      "file": "https://picsum.photos/seed/ford-card-7/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.document",
+    "pk": 8,
+    "fields": {
+      "patient": 1,
+      "uploaded_by": 14,
+      "doc_type": "other",
+      "file": "https://picsum.photos/seed/demo-other-8/400/400",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "uploaded_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]

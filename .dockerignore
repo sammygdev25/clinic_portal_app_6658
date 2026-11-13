@@ -1,0 +1,11 @@
+.git
+**/node_modules
+**/__pycache__
+.env
+.env.*
+backend/.env
+backend/db.sqlite3
+backend/media
+backend/staticfiles
+frontend/build
+.shikshya
